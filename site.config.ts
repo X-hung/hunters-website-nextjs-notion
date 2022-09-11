@@ -63,10 +63,11 @@ export default siteConfig({
   // navigationStyle: 'default'
   navigationStyle: 'custom',
   navigationLinks: [
-    {
-      title: 'About',
-      pageId: 'afd830e4de444577b5d0844111e5f4e0'
-    },
+    // to set default index page, please go to /lib/resolve-notion-page.ts
+    // {
+    //   title: 'About',
+    //   pageId: 'afd830e4de444577b5d0844111e5f4e0'
+    // },
     {
       title: 'Blog',
       pageId: '31b81f602f724d5a8855dec61029ce7e'

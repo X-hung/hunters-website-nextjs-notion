@@ -80,7 +80,8 @@ export async function resolveNotionPage(domain: string, rawPageId?: string) {
       }
     }
   } else {
-    pageId = site.rootNotionPageId
+    // set default index page
+    pageId = site.aboutPageId
 
     console.log(site)
     recordMap = await getPage(pageId)
