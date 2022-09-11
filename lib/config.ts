@@ -21,6 +21,12 @@ export const rootNotionPageId: string = parsePageId(
   { uuid: false }
 )
 
+
+// export const aboutPageId: string = parsePageId(
+//   getSiteConfig('aboutPageId'),
+//   { uuid: false }
+// )
+
 if (!rootNotionPageId) {
   throw new Error('Config error invalid "rootNotionPageId"')
 }
@@ -47,9 +53,14 @@ export const environment = process.env.NODE_ENV || 'development'
 export const isDev = environment === 'development'
 
 // general site config
+export const aboutPageId: string = getSiteConfig('aboutPageId')
 export const name: string = getSiteConfig('name')
 export const author: string = getSiteConfig('author')
 export const location: string = getSiteConfig('location')
+export const profileAvatar: string = getSiteConfig('profileAvatar')
+export const address: string = getSiteConfig('address')
+export const memo: string = getSiteConfig('memo')
+export const media: string = getSiteConfig('media')
 export const domain: string = getSiteConfig('domain')
 export const description: string = getSiteConfig('description', 'Notion Blog')
 export const language: string = getSiteConfig('language', 'en')
@@ -142,6 +153,7 @@ export const site: Site = {
   name,
   rootNotionPageId,
   rootNotionSpaceId,
+  aboutPageId,
   description
 }
 

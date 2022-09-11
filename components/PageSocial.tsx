@@ -12,7 +12,7 @@ interface SocialLink {
   href?: string
 }
 
-const socialLinks: SocialLink[] = [
+export const socialLinks: SocialLink[] = [
   config.twitter && {
     name: 'twitter',
     href: `https://twitter.com/${config.twitter}`,

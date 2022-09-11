@@ -1,0 +1,116 @@
+.pageProfile {
+    --notion-font-mono: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 13rem;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 10px;
+    /* background-color: #FC488F; */
+}
+
+.profileWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: linear-gradient(115deg, pink, #94bbe9);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.profileAvatar img{
+    margin: auto;
+    background: linear-gradient(115deg, pink, #94bbe9);
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 4px;
+    width: 100%;
+    border-color: rgba(#FC488F, 0.01);
+    padding: 2rem;
+    transition: transform 1s ease-in-out;
+}
+
+.socialIcons {
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+.profileAvatar {
+    background: linear-gradient(115deg, pink, #94bbe9);
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 4px;
+    width: 100%;
+    border-color: rgba(#FC488F, 0.01);
+    /* border-color: lightgrey; */
+    transition: transform 1s ease-in-out;
+}
+
+.profileAvatar:hover {
+    transform: rotate(360deg);
+}
+
+.profileBadge {
+    width: 100%;
+    margin: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    /* border-style: hidden;
+    border-radius: 4px;
+    align-self: center; */
+}
+
+.profileBadge img {
+    display: block;
+    margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profileAddress {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    /* font-family: monospace; */
+    font-size: small;
+}
+
+.profileAddress p {
+    color: grey;
+    font-family: var(--notion-font-mono);
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    /* display: inline-block; */
+    line-height: 1.2rem;
+}
+
+.profileMemo p {
+    font-family: var(--notion-font-mono);
+    font-size: small;
+    line-height: 1rem;
+}
+
+.profileAudioPlayer {
+    margin: auto;
+    margin-top: 1.2rem;
+    width: 100%;
+    /* border-style: solid; */
+    /* border-width: 1rem; */
+    /* border-radius: 8px; */
+}
+
+.profileAudioPlayer audio,
+.profileAudioPlayer audio::-webkit-media-controls-panel {
+    width: 100%;
+    height: 2rem;
+    background-color: #F1F3F4;
+    /* border-style: solid; */
+    border-width: 0.2rem;
+    border-radius: 8px;
+}

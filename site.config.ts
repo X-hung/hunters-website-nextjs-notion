@@ -3,6 +3,7 @@ import { siteConfig } from './lib/site-config'
 export default siteConfig({
   // the site's root Notion page (required)
   rootNotionPageId: 'd75f86cc9d434ac795dfc77ebac3f5d0',
+  aboutPageId: 'afd830e4de444577b5d0844111e5f4e0',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
@@ -13,6 +14,15 @@ export default siteConfig({
   domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
   author: 'Hunter Xu',
   location: 'Sydney, Australia',
+  profileAvatar: "/portrait.png",
+  address: `
+          233 J12 Building,
+          School of Computer Science
+          Camperdown, NSW 2006
+          Australia
+  `,
+  memo: "Most of my GitHub repositories are set private, never mind :)",
+  media: "/media/temple_of_time_repentance.mp3",
 
   // open graph metadata (optional)
   description: 'Hunter Xu\'s personal website, made with Next.js and Notion APIs',
@@ -60,6 +70,10 @@ export default siteConfig({
     {
       title: 'Blog',
       pageId: '31b81f602f724d5a8855dec61029ce7e'
+    },
+    {
+      title: '观点',
+      pageId: '30adb5a5038d4df1907296cb4da794ed'
     },
     {
       title: 'Porfolio',

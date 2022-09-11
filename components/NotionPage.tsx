@@ -14,7 +14,7 @@ import TweetEmbed from 'react-tweet-embed'
 import { NotionRenderer } from 'react-notion-x'
 
 // utils
-import { getBlockTitle, getPageProperty, formatDate } from 'notion-utils'
+import { getBlockTitle, getPageProperty, formatDate, parsePageId } from 'notion-utils'
 import { mapPageUrl, getCanonicalPageUrl } from 'lib/map-page-url'
 import { mapImageUrl } from 'lib/map-image-url'
 import { searchNotion } from 'lib/search-notion'
@@ -29,7 +29,7 @@ import { PageHead } from './PageHead'
 import { PageAside } from './PageAside'
 import { Footer } from './Footer'
 import { NotionPageHeader } from './NotionPageHeader'
-import { GitHubShareButton } from './GitHubShareButton'
+// import { GitHubShareButton } from './GitHubShareButton'
 
 import styles from './styles.module.css'
 
@@ -198,11 +198,19 @@ export const NotionPage: React.FC<types.PageProps> = ({
   const showTableOfContents = !!isBlogPost
   const minTableOfContentsItems = 3
 
+  // const pageAside = React.useMemo(
+  //   () => (
+  //     <PageAside block={block} recordMap={recordMap} isBlogPost={isBlogPost} />
+  //   ),
+  //   [block, recordMap, isBlogPost]
+  // )
+
+  const isAbout = parsePageId(block?.id) === parsePageId(site?.aboutPageId)
   const pageAside = React.useMemo(
     () => (
-      <PageAside block={block} recordMap={recordMap} isBlogPost={isBlogPost} />
+      <PageAside block={block} recordMap={recordMap} isAbout={isAbout} isBlogPost={isBlogPost} />
     ),
-    [block, recordMap, isBlogPost]
+    [block, recordMap, isAbout, isBlogPost]
   )
 
   const footer = React.useMemo(() => <Footer />, [])
@@ -217,6 +225,18 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
   const title = getBlockTitle(block, recordMap) || site.name
 
+  // if (title === "About") {
+  //   console.log("=================== About ==================")
+  // }
+
+  // const isAbout = getBlockTitle(block, recordMap) === 'About'
+  // const pageAside = React.useMemo(
+  //   () => (
+  //     <PageAside block={block} recordMap={recordMap} isAbout={isAbout} isBlogPost={isBlogPost} />
+  //   ),
+  //   [block, recordMap, isAbout, isBlogPost]
+  // )
+  
   console.log('notion page', {
     isDev: config.isDev,
     title,
