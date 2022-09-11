@@ -2,24 +2,25 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: '7875426197cf461698809def95960ebf',
+  rootNotionPageId: 'd75f86cc9d434ac795dfc77ebac3f5d0',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Next.js Notion Starter Kit',
+  name: 'Hunter Xu\'s Personal Website',
   domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
-  author: 'Travis Fischer',
+  author: 'Hunter Xu',
+  location: 'Sydney, Australia',
 
   // open graph metadata (optional)
-  description: 'Example Next.js Notion Starter Kit Site',
+  description: 'Hunter Xu\'s personal website, made with Next.js and Notion APIs',
 
   // social usernames (optional)
-  twitter: 'transitive_bs',
-  github: 'transitive-bullshit',
-  linkedin: 'fisch2',
+  twitter: 'x.hung.chn',
+  github: 'x-hung',
+  linkedin: 'hunter-xu',
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
@@ -49,16 +50,36 @@ export default siteConfig({
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages
-  navigationStyle: 'default'
-  // navigationStyle: 'custom',
-  // navigationLinks: [
-  //   {
-  //     title: 'About',
-  //     pageId: 'f1199d37579b41cbabfc0b5174f4256a'
-  //   },
-  //   {
-  //     title: 'Contact',
-  //     pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
-  //   }
-  // ]
+  // navigationStyle: 'default'
+  navigationStyle: 'custom',
+  navigationLinks: [
+    {
+      title: 'About',
+      pageId: 'afd830e4de444577b5d0844111e5f4e0'
+    },
+    {
+      title: 'Blog',
+      pageId: '31b81f602f724d5a8855dec61029ce7e'
+    },
+    {
+      title: 'Porfolio',
+      pageId: 'd791c8a13e3f421db78bde2bdb81283e'
+    },
+    {
+      title: 'Teaching',
+      pageId: 'e20210175ed8414ab2795ded75e53976'
+    },
+    {
+      title: 'Learning',
+      pageId: '587c5c7cc8944f45bddd6a2281ab1e1f'
+    },
+    {
+      title: 'Roadmap',
+      pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
+    },
+    {
+      title: 'Disclaimer',
+      pageId: 'b475ec051515430dab4533bdb0482ac2'
+    }
+  ]
 })
