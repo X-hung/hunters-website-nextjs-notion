@@ -5,10 +5,10 @@ import { FaGithub } from '@react-icons/all-files/fa/FaGithub'
 import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
 import { FaEnvelopeOpenText } from '@react-icons/all-files/fa/FaEnvelopeOpenText'
 import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
-import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
-import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
-
-import { useDarkMode } from 'lib/use-dark-mode'
+{/* Toggle Dark Mode */}
+// import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
+// import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
+// import { useDarkMode } from 'lib/use-dark-mode'
 import * as config from 'lib/config'
 
 import styles from './styles.module.css'
@@ -16,28 +16,29 @@ import styles from './styles.module.css'
 // TODO: merge the data and icons from PageSocial with the social links in Footer
 
 export const FooterImpl: React.FC = () => {
-  const [hasMounted, setHasMounted] = React.useState(false)
-  const { isDarkMode, toggleDarkMode } = useDarkMode()
+  {/* Toggle Dark Mode */}
+  // const [hasMounted, setHasMounted] = React.useState(false)
+  // const { isDarkMode, toggleDarkMode } = useDarkMode()
 
+  {/* Toggle Dark Mode */}
+  // const onToggleDarkMode = React.useCallback(
+  //   (e) => {
+  //     e.preventDefault()
+  //     toggleDarkMode()
+  //   },
+  //   [toggleDarkMode]
+  // )
 
-  const onToggleDarkMode = React.useCallback(
-    (e) => {
-      e.preventDefault()
-      toggleDarkMode()
-    },
-    [toggleDarkMode]
-  )
-
-  React.useEffect(() => {
-    setHasMounted(true)
-  }, [])
+  // React.useEffect(() => {
+  //   setHasMounted(true)
+  // }, [])
 
   return (
     <footer className={styles.footer}>
       <div className={styles.copyright}>© Copyright 2022 {config.author}. Made with ❤️ in {config.location}.</div>
 
       {/* Toggle Dark Mode */}
-      <div className={styles.settings}>
+      {/* <div className={styles.settings}>
         {hasMounted && (
           <a
             className={styles.toggleDarkMode}
@@ -49,7 +50,7 @@ export const FooterImpl: React.FC = () => {
             {isDarkMode ? <IoMoonSharp /> : <IoSunnyOutline />}
           </a>
         )}
-      </div>
+      </div> */}
 
       <div className={styles.social}>
         {config.twitter && (

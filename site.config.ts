@@ -15,12 +15,12 @@ export default siteConfig({
   author: 'Hunter Xu',
   location: 'Sydney, Australia',
   profileAvatar: "/portrait.png",
-  address: `
-          233 J12 Building,
-          School of Computer Science
-          Camperdown, NSW 2006
+  address: `<p>
+          233 J12 Building,<br/>
+          School of Computer Science<br/>
+          Camperdown, NSW 2006<br/>
           Australia
-  `,
+          </p>`,
   memo: "Most of my GitHub repositories are set private, never mind :)",
   media: "/media/temple_of_time_repentance.mp3",
 
