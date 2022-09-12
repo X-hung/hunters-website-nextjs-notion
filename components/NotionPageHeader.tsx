@@ -9,6 +9,7 @@ import { useDarkMode } from 'lib/use-dark-mode'
 import { bannerContent, navigationStyle, navigationLinks, isSearchEnabled } from 'lib/config'
 
 import styles from './styles.module.css'
+import { parsePageId } from 'notion-utils'
 
 const ToggleThemeButton = () => {
   const [hasMounted, setHasMounted] = React.useState(false)
@@ -59,11 +60,13 @@ export const NotionPageHeader: React.FC<{
               }
 
               if (link.pageId) {
+                // console.log("parsePageId", block.id.replace(/-/g,""));
+                // console.log("link.pageId", link.pageId)
                 return (
                   <components.PageLink
                     href={mapPageUrl(link.pageId)}
                     key={index}
-                    className={cs(styles.navLink, 'breadcrumb', 'button')}
+                    className={cs(styles.navLink, 'breadcrumb', 'button', {[styles.activeLink]: parsePageId(block.id).replace(/-/g,"") === link.pageId})}
                   >
                     {link.title}
                   </components.PageLink>

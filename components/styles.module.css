@@ -31,6 +31,10 @@
   color: rgba(55, 53, 47, 0.4);
 }
 
+.activeLink {
+  color: #fb7185 !important;
+}
+
 .main {
   display: flex;
   flex-direction: column;
