@@ -24,6 +24,9 @@ export default siteConfig({
   memo: "Most of my GitHub repositories are set private, never mind :)",
   media: "/media/temple_of_time_repentance.mp3",
 
+  // header banner content
+  bannerContent: 'On Septemper. 21, 2022, Mr. Hunter Xu joined the <a href="https://www.unsw.edu.au/" target="_blank"><strong>University of New South Wales</strong></a>, as a Software Engineer in the School of Computer and Enigeering! 🎉',
+
   // open graph metadata (optional)
   description: 'Hunter Xu\'s personal website, made with Next.js and Notion APIs',
 

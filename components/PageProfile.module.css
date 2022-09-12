@@ -92,6 +92,7 @@
 
 .profileMemo p {
     font-family: var(--notion-font-mono);
+    font-weight: normal;
     font-size: small;
     line-height: 1rem;
 }

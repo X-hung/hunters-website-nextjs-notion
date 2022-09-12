@@ -6,7 +6,7 @@ import { Header, Breadcrumbs, Search, useNotionContext } from 'react-notion-x'
 import * as types from 'notion-types'
 
 import { useDarkMode } from 'lib/use-dark-mode'
-import { navigationStyle, navigationLinks, isSearchEnabled } from 'lib/config'
+import { bannerContent, navigationStyle, navigationLinks, isSearchEnabled } from 'lib/config'
 
 import styles from './styles.module.css'
 
@@ -37,12 +37,17 @@ export const NotionPageHeader: React.FC<{
 }> = ({ block }) => {
   const { components, mapPageUrl } = useNotionContext()
 
+  // set banner content, now using config.bannerContent
+  // const headerBannerContent = 'Hello, <a href="https://www.google.com">Google</a>'
+
   if (navigationStyle === 'default') {
     return <Header block={block} />
   }
 
   return (
     <header className='notion-header'>
+      { bannerContent && <div className='notion-header-banner' dangerouslySetInnerHTML={{__html: bannerContent}}></div> }
+      
       <div className='notion-nav-header'>
         <Breadcrumbs block={block} rootOnly={true} />
 

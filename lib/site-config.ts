@@ -15,6 +15,7 @@ export interface SiteConfig {
   memo: string
   media: string
 
+  bannerContent?: string | null
   description?: string
   language?: string
 

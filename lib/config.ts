@@ -63,6 +63,7 @@ export const memo: string = getSiteConfig('memo')
 export const media: string = getSiteConfig('media')
 export const domain: string = getSiteConfig('domain')
 export const description: string = getSiteConfig('description', 'Notion Blog')
+export const bannerContent: string = getSiteConfig('bannerContent')
 export const language: string = getSiteConfig('language', 'en')
 
 // social accounts
