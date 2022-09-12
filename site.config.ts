@@ -73,7 +73,7 @@ export default siteConfig({
     // },
     {
       title: 'Blog',
-      pageId: '31b81f602f724d5a8855dec61029ce7e'
+      pageId: '3aeb353411774d12bf7b2cd48f706011'
     },
     {
       title: '观点',
