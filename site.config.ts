@@ -25,7 +25,7 @@ export default siteConfig({
   media: "/media/temple_of_time_repentance.mp3",
 
   // header banner content
-  bannerContent: 'On Septemper. 21, 2022, Mr. Hunter Xu joined the <a href="https://www.unsw.edu.au/" target="_blank"><strong>University of New South Wales</strong></a>, as a Software Engineer in the School of Computer and Enigeering! 🎉',
+  bannerContent: '🔉: &nbsp; On Septemper. 21, 2022, Mr. Hunter Xu will join the <a href="https://www.unsw.edu.au/" target="_blank"><em>University of New South Wales</em></a>, as a Software Engineer in the School of Computer and Enigeering! 🎉',
 
   // open graph metadata (optional)
   description: 'Hunter Xu\'s personal website, made with Next.js and Notion APIs',
@@ -85,6 +85,7 @@ export default siteConfig({
     },
     {
       title: 'Teaching',
+      // level: 2,
       pageId: 'e20210175ed8414ab2795ded75e53976'
     },
     {
@@ -92,8 +93,9 @@ export default siteConfig({
       pageId: '587c5c7cc8944f45bddd6a2281ab1e1f'
     },
     {
-      title: 'Roadmap',
-      pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
+      title: 'Roadmap ↗︎',
+      // pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1',
+      url: 'https://roadmap.sh/'
     },
     {
       title: 'Disclaimer',
