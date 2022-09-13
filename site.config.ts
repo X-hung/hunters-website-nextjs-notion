@@ -11,7 +11,7 @@ export default siteConfig({
 
   // basic site info (required)
   name: 'Hunter Xu\'s Personal Website',
-  domain: 'nextjs-notion-starter-kit.transitivebullsh.it',
+  domain: 'hunterxu-next.vercel.app',
   author: 'Hunter Xu',
   location: 'Sydney, Australia',
   profileAvatar: "/portrait.png",
