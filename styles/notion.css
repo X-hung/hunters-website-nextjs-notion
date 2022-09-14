@@ -17,9 +17,10 @@
   padding-top: 0 !important;
 }
 
-.dark-mode .notion-frame {
+.dark-mode .notion {
   background: rgb(2,0,36);
   background: radial-gradient(circle, rgba(1,22,39,1) 0%, rgba(0,28,33,1) 48%, rgba(6,6,47,1) 100%);
+  transition: all 0.3s ease-in-out;
 }
 
 .notion-page {
