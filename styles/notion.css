@@ -103,6 +103,14 @@
   gap: 0.5rem;
 }
 
+.notion-aside-table-of-contents {
+  background-color: initial;
+}
+
+.notion-page-link .notion-page-link:hover {
+  background: initial;
+}
+
 @media (min-width: 1300px) and (min-height: 300px) {
   .notion-page-content-has-aside {
     display: flex !important;
@@ -115,8 +123,9 @@
 
   .notion-aside {
     /* position: inherit; */
-    position: relative;
-    top: 0;
+    /* Moved to pageProfile */
+    /* position: relative;
+    top: 0; */
   }
 }
 
