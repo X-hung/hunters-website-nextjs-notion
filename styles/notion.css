@@ -108,7 +108,8 @@
     display: flex !important;
     flex-direction: row;
     /* width: calc((68vw + var(--notion-max-width)) / 2) !important; */
-    width: var(--notion-max-width);
+    /* Adjust the layout for the main section with aside */
+    width: calc(var(--notion-max-width) + 6rem);
     gap: 3rem !important;
   }
 
