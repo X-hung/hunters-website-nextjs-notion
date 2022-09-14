@@ -11,20 +11,26 @@
     /* background-color: #FC488F; */
 }
 
+
 .profileWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
-    background: linear-gradient(115deg, pink, #94bbe9);
+    background: linear-gradient(115deg, #fda4af, #7dd3fc);
     border-radius: 50%;
     width: 200px;
     height: 200px;
 }
 
+/* Not working */
+.dark-mode .profileWrapper {
+    background: linear-gradient(115deg, #db6276, #326bac) !important;
+}
+
 .profileAvatar img{
     margin: auto;
-    background: linear-gradient(115deg, pink, #94bbe9);
+    /* background: linear-gradient(115deg, pink, #94bbe9); */
     border-radius: 50%;
     border-style: solid;
     border-width: 4px;
@@ -44,7 +50,7 @@
 }
 
 .profileAvatar {
-    background: linear-gradient(115deg, pink, #94bbe9);
+    /* background: linear-gradient(115deg, pink, #94bbe9); */
     border-radius: 50%;
     border-style: solid;
     border-width: 4px;

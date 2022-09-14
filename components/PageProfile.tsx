@@ -7,10 +7,13 @@ import styles from './PageProfile.module.css'
 import socialStyles from './PageSocial.module.css'
 import { socialLinks } from './PageSocial'
 import Image from 'next/image'
+import { useDarkMode } from 'lib/use-dark-mode'
 
 export const PageProfile: React.FC = () => {
+    const { isDarkMode } = useDarkMode()
+    
     return (
-        <div className={styles.pageProfile}>
+        <div className={cs({'dark-mode': isDarkMode}, styles.pageProfile)}>
             <div className={styles.profileWrapper}>
                 <Image
                     className={styles.profileAvatar}
@@ -32,8 +35,8 @@ export const PageProfile: React.FC = () => {
             </div>
 
             {/* <PageSocial clasName="xxx" /> */}
-            {/* <div className={socialStyles.pageSocia + ' ' + styles.socialIcons} style={socialIcons}> */}
-            <div className={socialStyles.pageSocia + ' ' + styles.socialIcons}>
+            {/* <div className={socialStyles.pageSocial + ' ' + styles.socialIcons} style={socialIcons}> */}
+            <div className={socialStyles.pageSocial + ' ' + styles.socialIcons}>
                 {socialLinks.map((action) => (
                     <a
                         className={cs(socialStyles.action, socialStyles[action.name])}
